@@ -3,21 +3,17 @@
    [om.core :as om :include-macros true]
    [om.dom :as dom :include-macros true]))
 
-
-(def app-state (atom {}))
-
 (defn redcube
-  [app owner]
+  [_ _]
   (reify
     om/IRender
     (render
-     [this]
+     [_]
       (dom/div (clj->js {:ref "box"
                          :onMouseMove #(.log js/console (.-nativeEvent %))
                          }) nil))))
 
-(om/root redcube app-state {:target (.getElementById js/document "subject")})
-(.log js/console "test123")
+(om/root redcube nil {:target (.getElementById js/document "subject")})
 
 
 

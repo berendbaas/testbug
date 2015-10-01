@@ -59293,52 +59293,49 @@ goog.provide("testbug.handler.app");
 goog.require("cljs.core");
 goog.require("om.core");
 goog.require("om.dom");
-testbug.handler.app.app_state = cljs.core.atom.call(null, cljs.core.PersistentArrayMap.EMPTY);
-testbug.handler.app.redcube = function testbug$handler$app$redcube(app, owner) {
-  if (typeof testbug.handler.app.t19284 !== "undefined") {
+testbug.handler.app.redcube = function testbug$handler$app$redcube(_, ___$1) {
+  if (typeof testbug.handler.app.t19307 !== "undefined") {
   } else {
-    testbug.handler.app.t19284 = function(redcube, app, owner, meta19285) {
+    testbug.handler.app.t19307 = function(redcube, _, meta19308) {
       this.redcube = redcube;
-      this.app = app;
-      this.owner = owner;
-      this.meta19285 = meta19285;
+      this._ = _;
+      this.meta19308 = meta19308;
       this.cljs$lang$protocol_mask$partition0$ = 393216;
       this.cljs$lang$protocol_mask$partition1$ = 0;
     };
-    testbug.handler.app.t19284.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_19286, meta19285__$1) {
+    testbug.handler.app.t19307.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_19309, meta19308__$1) {
       var self__ = this;
-      var _19286__$1 = this;
-      return new testbug.handler.app.t19284(self__.redcube, self__.app, self__.owner, meta19285__$1);
+      var _19309__$1 = this;
+      return new testbug.handler.app.t19307(self__.redcube, self__._, meta19308__$1);
     };
-    testbug.handler.app.t19284.prototype.cljs$core$IMeta$_meta$arity$1 = function(_19286) {
+    testbug.handler.app.t19307.prototype.cljs$core$IMeta$_meta$arity$1 = function(_19309) {
       var self__ = this;
-      var _19286__$1 = this;
-      return self__.meta19285;
+      var _19309__$1 = this;
+      return self__.meta19308;
     };
-    testbug.handler.app.t19284.prototype.om$core$IRender$ = true;
-    testbug.handler.app.t19284.prototype.om$core$IRender$render$arity$1 = function(this$) {
+    testbug.handler.app.t19307.prototype.om$core$IRender$ = true;
+    testbug.handler.app.t19307.prototype.om$core$IRender$render$arity$1 = function(___$1) {
       var self__ = this;
-      var this$__$1 = this;
-      return React.DOM.div(cljs.core.clj__GT_js.call(null, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "ref", "ref", 1289896967), "box", new cljs.core.Keyword(null, "onMouseMove", "onMouseMove", 2083193327), function(this$__$1) {
-        return function(p1__19280_SHARP_) {
-          return console.log(p1__19280_SHARP_.nativeEvent);
+      var ___$2 = this;
+      return React.DOM.div(cljs.core.clj__GT_js.call(null, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "ref", "ref", 1289896967), "box", new cljs.core.Keyword(null, "onMouseMove", "onMouseMove", 2083193327), function(___$2) {
+        return function(p1__19303_SHARP_) {
+          return console.log(p1__19303_SHARP_.nativeEvent);
         };
-      }(this$__$1)], null)), null);
+      }(___$2)], null)), null);
     };
-    testbug.handler.app.t19284.getBasis = function() {
-      return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.with_meta(new cljs.core.Symbol(null, "redcube", "redcube", 636940200, null), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "arglists", "arglists", 1661989754), cljs.core.list(new cljs.core.Symbol(null, "quote", "quote", 1377916282, null), cljs.core.list(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null, "app", 
-      "app", 1079569820, null), new cljs.core.Symbol(null, "owner", "owner", 1247919588, null)], null)))], null)), new cljs.core.Symbol(null, "app", "app", 1079569820, null), new cljs.core.Symbol(null, "owner", "owner", 1247919588, null), new cljs.core.Symbol(null, "meta19285", "meta19285", 1796257949, null)], null);
+    testbug.handler.app.t19307.getBasis = function() {
+      return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.with_meta(new cljs.core.Symbol(null, "redcube", "redcube", 636940200, null), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "arglists", "arglists", 1661989754), cljs.core.list(new cljs.core.Symbol(null, "quote", "quote", 1377916282, null), cljs.core.list(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null, "_", "_", 
+      -1201019570, null), new cljs.core.Symbol(null, "_", "_", -1201019570, null)], null)))], null)), new cljs.core.Symbol(null, "_", "_", -1201019570, null), new cljs.core.Symbol(null, "meta19308", "meta19308", -225389159, null)], null);
     };
-    testbug.handler.app.t19284.cljs$lang$type = true;
-    testbug.handler.app.t19284.cljs$lang$ctorStr = "testbug.handler.app/t19284";
-    testbug.handler.app.t19284.cljs$lang$ctorPrWriter = function(this__8360__auto__, writer__8361__auto__, opt__8362__auto__) {
-      return cljs.core._write.call(null, writer__8361__auto__, "testbug.handler.app/t19284");
+    testbug.handler.app.t19307.cljs$lang$type = true;
+    testbug.handler.app.t19307.cljs$lang$ctorStr = "testbug.handler.app/t19307";
+    testbug.handler.app.t19307.cljs$lang$ctorPrWriter = function(this__8360__auto__, writer__8361__auto__, opt__8362__auto__) {
+      return cljs.core._write.call(null, writer__8361__auto__, "testbug.handler.app/t19307");
     };
-    testbug.handler.app.__GT_t19284 = function testbug$handler$app$redcube_$___GT_t19284(redcube__$1, app__$1, owner__$1, meta19285) {
-      return new testbug.handler.app.t19284(redcube__$1, app__$1, owner__$1, meta19285);
+    testbug.handler.app.__GT_t19307 = function testbug$handler$app$redcube_$___GT_t19307(redcube__$1, ___$2, meta19308) {
+      return new testbug.handler.app.t19307(redcube__$1, ___$2, meta19308);
     };
   }
-  return new testbug.handler.app.t19284(testbug$handler$app$redcube, app, owner, cljs.core.PersistentArrayMap.EMPTY);
+  return new testbug.handler.app.t19307(testbug$handler$app$redcube, ___$1, cljs.core.PersistentArrayMap.EMPTY);
 };
-om.core.root.call(null, testbug.handler.app.redcube, testbug.handler.app.app_state, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "target", "target", 253001721), document.getElementById("subject")], null));
-console.log("test123");
+om.core.root.call(null, testbug.handler.app.redcube, null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "target", "target", 253001721), document.getElementById("subject")], null));
